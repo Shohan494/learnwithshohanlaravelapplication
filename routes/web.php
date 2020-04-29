@@ -26,3 +26,10 @@ Route::get('profile', function (Request $request) {
     // Only authenticated users may enter...
     return $request->user();
 })->middleware('auth.basic');
+
+Route::get('send_test_email', function(){
+	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
+	{
+		$message->to('m.h.durjoi@gmail.com');
+	});
+});
