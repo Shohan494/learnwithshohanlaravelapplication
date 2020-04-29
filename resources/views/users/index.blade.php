@@ -30,8 +30,9 @@
                                         <td>{{ $user->email }}</td>
                                         <td>{{ $user->created_at->format('d M Y') }}</td>
                                         <td>
-                                            <a href="" class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-primary">Edit</a>
                                             <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                            <form action="{{ route('users.destroy') }}" method="post"> @csrf @method("DELETE")</form>
                                         </td>
                                     </tr>
                                     <tr>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUser;
+use App\Http\Requests\UpdateUser;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -68,7 +69,12 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        if(!isset($user)){
+            Session::flash('warning_message', 'Invalid User ID');
+            return redirect()->route('users.index');
+        }
+        return view('users.edit', compact('user'));
     }
 
     /**
@@ -78,9 +84,14 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateUser $request, $id)
     {
-        //
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->save();
+        session()->flash('success_message', "User Updated");
+        return redirect()->route('users.index');
     }
 
     /**
