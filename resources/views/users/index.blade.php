@@ -12,7 +12,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-
+                            @include('flash.message')
                             @if(count($users))
                             <table class="table table-bordered">
                                 <tr>
