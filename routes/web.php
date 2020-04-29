@@ -63,7 +63,11 @@ Route::get('send_test_email', function(){
 
 });
 
-Route::get('event', function () {
-    event(new App\Events\ProjectCreated('Shohan', 'New Project'));
+Route::get('eventFire', function () {
+    event(new App\Events\ProjectCreated('Shohan'));
     return "Event has been sent!";
+});
+
+Route::get('eventBroadcast', function () {
+    return view('event');
 });
