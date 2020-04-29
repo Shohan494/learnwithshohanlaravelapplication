@@ -54,7 +54,6 @@ Route::get('/checkPolicy',  function (Request $request) {
       echo $response->message();
   }
 
-
 Route::get('send_test_email', function(){
 	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
 	{
