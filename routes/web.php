@@ -31,8 +31,6 @@ Route::get('profile', function (Request $request) {
     return $request->user();
 })->middleware('auth.basic');
 
-
-
 Route::get('/passGate',  function (Request $request) {
   if (Gate::allows('view-profile')) {
     return "you can pass the gate";
@@ -55,5 +53,12 @@ Route::get('/checkPolicy',  function (Request $request) {
   } else {
       echo $response->message();
   }
+
+
+Route::get('send_test_email', function(){
+	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
+	{
+		$message->to('m.h.durjoi@gmail.com');
+	});
 
 });
