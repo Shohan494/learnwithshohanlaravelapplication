@@ -53,7 +53,7 @@ Route::get('/checkPolicy',  function (Request $request) {
   } else {
       echo $response->message();
   }
-
+});
 
 Route::get('send_test_email', function(){
 	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
@@ -61,4 +61,9 @@ Route::get('send_test_email', function(){
 		$message->to('m.h.durjoi@gmail.com');
 	});
 
+});
+
+Route::get('event', function () {
+    event(new App\Events\ProjectCreated('Shohan', 'New Project'));
+    return "Event has been sent!";
 });
