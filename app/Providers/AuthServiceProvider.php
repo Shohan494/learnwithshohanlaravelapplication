@@ -25,6 +25,20 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('view-profile', function ($user) {
+            return $user->isAdmin();
+        });
+
+        Gate::define('update-post', function ($user, $post) {
+            return $user->id === $post->user_id;
+        });
+
+        Gate::define('edit-settings', function ($user) {
+            return $user->isAdmin
+                        ? Response::allow()
+                        : Response::deny('You must be a super administrator.');
+        });
+
+        // Gate::define('update-post', 'App\Policies\PostPolicy@update');
     }
 }
