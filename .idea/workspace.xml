@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ad386a3-a9f6-4a91-9240-4cbd4659b0e9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/flash/message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/flash/message.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+            <state relative-caret-position="389">
+              <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -31,11 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/flash/message.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <folding>
+                <element signature="e#1037#1044#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/users/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="114">
+              <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -76,12 +87,12 @@
         <option value="$PROJECT_DIR$/resources/views/users/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/StoreUser.php" />
         <option value="$PROJECT_DIR$/resources/views/flash/flash.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/flash/message.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/UpdateUser.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/flash/message.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       </list>
     </option>
   </component>
@@ -270,7 +281,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Regis&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php&#10;StoreUser&#9;null&#9;null&#10;registCont&#9;null&#9;null&#10;regist&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/auth/login.blade.php&#10;UserCon&#9;null&#9;null&#10;app.bl&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/layouts/app.blade.php&#10;web.php&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/routes/web.php&#10;web&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="me&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/flash/message.blade.php&#10;Regis&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php&#10;StoreUser&#9;null&#9;null&#10;registCont&#9;null&#9;null&#10;regist&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/auth/login.blade.php&#10;UserCon&#9;null&#9;null&#10;app.bl&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/resources/views/layouts/app.blade.php&#10;web.php&#9;FILE&#9;file://C:/wamp64/www/shohan/Laravel/learnwithshohanlaravelapplication/routes/web.php&#10;web&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -304,12 +315,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588186335546</updated>
-      <workItem from="1588186337548" duration="10246000" />
+      <workItem from="1588186337548" duration="11182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10246000" />
+    <option name="totallyTimeSpent" value="11182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,17 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/flash/message.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#330#337#1#HTML" expanded="true" />
-            <element signature="e#672#679#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/StoreUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -481,20 +481,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+        <state relative-caret-position="389">
+          <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/users/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/flash/message.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        <state relative-caret-position="458">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="e#1037#1044#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

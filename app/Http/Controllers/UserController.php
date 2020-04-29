@@ -102,6 +102,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        session()->flash('danger_message', 'User Deleted Successfully');
+        return redirect()->route('users.index');
     }
 }
