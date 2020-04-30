@@ -5,6 +5,9 @@ use Illuminate\Http\Request;
 use Illuminate\Auth\Access\Response;
 use Illuminate\Support\Facades\Gate;
 use App\User;
+use Illuminate\Support\Facades\Redis;
+use Illuminate\Support\Facades\Cache;
+
 
 
 
@@ -43,6 +46,7 @@ Route::get('/checkPolicy',  function (Request $request) {
   } else {
       echo $response->message();
   }
+});
 
 Route::get('send_test_email', function(){
 	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
@@ -50,4 +54,29 @@ Route::get('send_test_email', function(){
 		$message->to('m.h.durjoi@gmail.com');
 	});
 
+});
+
+Route::get('eventFire', function () {
+    event(new App\Events\ProjectCreated('Shohan'));
+    return "Event has been sent!";
+});
+
+Route::get('eventBroadcast', function () {
+    return view('event');
+});
+
+Route::get('redisTest', function () {
+  $redis = Redis::connection();
+  $size = $redis->dbSize();
+  echo "Redis has $size keys\n";
+  $info = $redis->info();
+  echo "<pre>";
+  print_r($info);
+  echo "</pre>";
+});
+
+
+Route::get('cacheTest', function () {
+  $value = Cache::get('key');
+  dd($value);
 });
