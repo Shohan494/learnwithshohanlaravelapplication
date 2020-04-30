@@ -80,8 +80,9 @@ Route::get('redisTest', function () {
   $size = $redis->dbSize();
   echo "Redis has $size keys\n";
   $info = $redis->info();
+  echo "<pre>";
   print_r($info);
-
+  echo "</pre>";
 });
 
 
