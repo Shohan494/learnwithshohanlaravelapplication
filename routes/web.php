@@ -15,6 +15,9 @@ use Illuminate\Http\Request;
 use Illuminate\Auth\Access\Response;
 use Illuminate\Support\Facades\Gate;
 use App\User;
+use Illuminate\Support\Facades\Redis;
+use Illuminate\Support\Facades\Cache;
+
 
 
 
@@ -70,4 +73,19 @@ Route::get('eventFire', function () {
 
 Route::get('eventBroadcast', function () {
     return view('event');
+});
+
+Route::get('redisTest', function () {
+  $redis = Redis::connection();
+  $size = $redis->dbSize();
+  echo "Redis has $size keys\n";
+  $info = $redis->info();
+  print_r($info);
+
+});
+
+
+Route::get('cacheTest', function () {
+  $value = Cache::get('key');
+  dd($value);
 });
